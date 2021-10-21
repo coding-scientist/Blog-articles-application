@@ -1,0 +1,124 @@
+*, *::before, *::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: sans-serif;
+   text-align: center;
+   background-color: #a9d9f0;
+}
+
+.title {
+   text-align: center;
+
+   h1 {
+      font-size: 3rem;
+      letter-spacing: 3px;
+      margin: 1rem 0;
+   }
+
+   .underline {
+      width: 130px;
+      height: 6px;
+      background-color: steelblue;
+      border-radius: 5px;
+      margin: 0 auto;
+   }
+}
+
+.review {
+   background-color: #fff;
+   padding: 2rem 1rem;
+   margin: 5rem auto;
+   border-radius: 10px;
+   width: 80%;
+   max-width: 700px;
+}
+
+.image-container {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   background-color: steelblue;
+   margin: 0 auto;
+   position: relative;
+   margin-bottom: 1.3rem;
+
+   &::before {
+      content: '”';
+      font-weight: 800;
+      font-size: 4rem;
+      color: #fff;
+      background: steelblue;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+      left: -20px;
+      z-index: 1;
+   }
+
+   #person-img {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      object-fit: cover;
+      transform: translate(-9px, 6px);
+   }
+}
+
+#author {
+   font-weight: 500;
+   letter-spacing: 2.5px;
+   display: inline-block;
+   margin-bottom: 10px;
+}
+
+#job-description {
+   font-size: 1.2rem;
+   font-weight: 600;
+   text-transform: capitalize;
+   word-spacing: 1px;
+   letter-spacing: 1.5px;
+   color: steelblue;
+   margin-bottom: 1.2rem;
+}
+
+#info {
+   color: rgb(98, 133, 130);
+   letter-spacing: .5px;
+   line-height: 23px;
+   margin-bottom: 1rem;
+}
+
+.button-container * {
+   background: transparent;
+   border: none;
+   color: steelblue;
+   margin: 0 .3rem .7rem .3rem;
+}
+
+.button-container *:active {
+   opacity: .9;
+   transform: scale(.95);
+}
+
+.random-btn {
+   color: rgb(9, 118, 126);
+   font-weight: 600;
+   letter-spacing: .3px;
+   text-transform: capitalize;
+   padding: .4em;
+   background-color: rgb(203, 239, 245);
+   border: 2px solid;
+   border-radius: 10px;
+}
+
+.random-btn:active {
+   opacity: .9;
+   transform: scale(.95);
+}
+
